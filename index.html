@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet"  href="TechnicalDocumentation.css"/>
+        
+    <title>Python Documentation</title>
+  </head>
+   
+  <body>
+
+    <nav id="navbar">
+      <header id="pythondocumentation">Python Documentation</header>
+
+        <ul class="menu" >
+          <li><a class="nav-link"  href="#Numbers">Numbers</a></li>
+          <li><a class="nav-link" href="#Strings">Strings</a></li>
+          <li><a class="nav-link" href="#Fonctions">Fonctions</a></li>
+          <li><a class="nav-link" href="#If_Statements">If Statements</a></li>
+          <li><a class="nav-link" href="#Loops">Loops</a></li>
+          <li><a class="nav-link" href="#Lists">Lists</a></li>
+               
+       
+           
+        
+    </nav>
+
+ 
+ 
+    <main id="main-doc">
+      <section class="main-section" id="Numbers">
+        <header>
+          <h1>Numbers</h1>
+        </header>
+          <article>
+            <p>The interpreter acts as a simple calculator: you can type an expression at it and it will write the value. Expression syntax is straightforward: the operators +, -, * and / work just like in most other languages (for example, Pascal or C); parentheses (()) can be used for grouping. For example:</p>
+            <code>
+                >>> 2 + 2
+                4
+                >>> 50 - 5*6
+                20
+                >>> (50 - 5*6) / 4
+                5.0
+                >>> 8 / 5
+                1.6
+            </code>
+ 
+            <p>
+            The integer numbers (e.g. 2, 4, 20) have type int, the ones with a fractional part (e.g. 5.0, 1.6) have type float. We will see more about numeric types later in the tutorial.</p>
+            <P>Division (/) always returns a float. To do floor division and get an integer result (discarding any fractional result) you can use the // operator; to calculate the remainder you can use %: </p>
+            <code>
+            >>> 17 / 3  # classic division returns a float
+            5.666666666666667
+            >>>
+            >>> 17 // 3  # floor division discards the fractional part
+            5
+            >>> 17 % 3  # the % operator returns the remainder of the division
+            2
+            >>> 5 * 3 + 2  # result * divisor + remainder
+            17
+            </code>
+                 
+        </article>
+      </section>
+      <section class="main-section" id="Strings">
+        <header >
+          <h1>Strings</h1>
+        </header>
+  
+        <article>
+  
+           <p> Strings are amongst the most popular types in Python. We can create them simply by enclosing characters in quotes. Python treats single quotes the same as double quotes. Creating strings is as simple as assigning a value to a variable. For example:</p>
+          <code>
+          var1 = 'Hello World!'
+          var2 = "Python Programming"
+            </code>
+          <p>Accessing Values in Strings
+          Python does not support a character type; these are treated as strings of length one, thus also considered a substring.
+
+          To access substrings, use the square brackets for slicing along with the index or indices to obtain your substring. For example: </p>
+
+
+           <code>
+            var1 = 'Hello World!'
+            var2 = "Python Programming"
+
+            print ("var1[0]: ")
+             >>>var1[0]:
+            print("var2[1:5]: ") 
+             >>>var2[1:5]
+           
+            </code>
+
+ 
+
+        </article>
+           </section>
+             <section class="main-section" id="Fonctions">
+           <header >
+        <h1>Fonctions</h1>
+             </header>
+           
+        <article>
+          <p>
+            A function is a block of organized, reusable code that is used to perform a single, related action. Functions provide better modularity for your application and a high degree of code reusing.
+
+        As you already know, Python gives you many built-in functions like print(), etc. but you can also create your own functions. These functions are called user-defined functions.</p>
+         
+         <p>
+           The syntaxt is the following:
+         <code>
+        def functionname( parameters ):
+           "function_docstring"
+           function_suite
+           return [expression]
+         
+              </code>
+         <p>
+           By default, parameters have a positional behavior and you need to inform them in the same order that they were defined.
+
+        The following function takes a string as input parameter and prints it on standard screen:
+         </p>
+          <code>
+            def printme( str ):
+           "This prints a passed string into this function"
+           print str
+           return
+            </code>
+        </article>
+          </section>
+    <section class="main-section" id="If_Statements">
+   <header >
+<h1>If Statements</h1>
+     </header>
+  
+<article>
+  <p>Python supports the usual logical conditions from mathematics:</p>
+<ul>
+  <li> Equals: a == b</li>
+  <li>Not Equals: a != b</li>
+  <li>Less than: a < b </li>
+  <li>Less than or equal to: a < =b </li>
+  <li>Greater than: a > b</li>
+  <li>Greater than or equal to: a > = b</li>
+  </ul>
+<p>These conditions can be used in several ways, most commonly in "if statements" and loops.
+
+  An "if statement" is written by using the if keyword.</p>
+
+
+ <code>
+a = 33
+b = 200
+if b > a:
+  print("b is greater than a")
+
+      </code>
+
+ 
+<p>
+
+                  </p>
+</article>
+  </section>
+    <section class="main-section" id="Loops">
+   <header >
+<h1>Loops</h1>
+     </header>
+    
+<article>
+  <p>
+    Programming languages provide various control structures that allow for more complicated execution paths.
+
+A loop statement allows us to execute a statement or group of statements multiple times.<br><br>
+    Python programming language provides following types of loops to handle looping requirements:</p>
+    <ul>
+      <li> While loop:
+          <p>Repeats a statement or group of statements while a given condition is TRUE. It tests the condition before executing the loop body</p>
+        <p>
+   Exemple: Print i as long as i is less than 6
+        <code>    
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+            </code>
+     </p>
+      </li>
+            
+       <li> For loop:
+      <p>Executes a sequence of statements multiple times and abbreviates the code that manages the loop variable.</p>
+         <p>
+           Exemple:Print each fruit in a fruit list</p>
+         <code>
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+      </code>
+      </li>
+      <li> Nested loop:
+      <p>You can use one or more loop inside any another while, for or do..while loop. </p>
+      </li>
+
+
+ 
+</article>
+  </section>
+   <section class="main-section" id="Lists">
+   <header >
+<h1>Lists</h1>
+     </header>
+ 
+<article>
+  <p>
+    The list is a most versatile datatype available in Python which can be written as a list of comma-separated values (items) between square brackets. Important thing about a list is that items in a list need not be of the same type.</p>
+
+<p>Creating a list is as simple as putting different comma-separated values between square brackets. For example:</p>
+ <code>
+list1 = ['physics', 'chemistry', 1997, 2000];
+list2 = [1, 2, 3, 4, 5 ];
+list3 = ["a", "b", "c", "d"]
+      </code>
+  <p>Similar to string indices, list indices start at 0, and lists can be sliced, concatenated and so on.</p>
+  <p>
+    To access values in lists, use the square brackets for slicing along with the index or indices to obtain value available at that index. For example:</p>
+  <code>
+    list1 = ['physics', 'chemistry', 1997, 2000];
+list2 = [1, 2, 3, 4, 5, 6, 7 ];
+print ("list1[0]: ", list1[0])
+print ("list2[1:5]: ", list2[1:5])
+  </code>
+  <p>
+    When the above code is executed, it produces the following result </p>
+  <code>
+    list1[0]:  physics
+    list2[1:5]:  [2, 3, 4, 5]</code>
+
+ 
+<p>
+
+                  </p>
+</article>
+   </section>
+
+        </main>
+    </body>
+</html>
