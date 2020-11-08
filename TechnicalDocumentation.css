@@ -3,6 +3,10 @@ body{
   margin: 0; /*elimina el margen por defecto*/
   background-color: #ffffff;
 }
+
+html {
+  scroll-behavior: smooth;
+}
 #navbar 
 {
    
@@ -20,12 +24,13 @@ body{
 #pythondocumentation
 {
   padding-top: 30px;
-  font-size: 1.6em;
+  font-size: 1em;
   padding-left: 10px;
    
   
   
 }
+
 
 
 #navbar ul 
@@ -79,7 +84,7 @@ p, article
      
 }
 
-h1
+h2
 {
     color:#2962ff;
     font-family: Baskerville,"Palatino Linotype", Times, serif;
